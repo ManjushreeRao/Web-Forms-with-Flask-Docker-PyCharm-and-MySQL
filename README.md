@@ -5,7 +5,7 @@
 ## This project is being built to create Web-forms to add new records, update and delete data.
 
 # Images
-### Pycharm database ![Pycharm database](screenshots/Pycharm_Database.PNG)
+### Pycharm database ![LocalHostRun](screenshots/Pycharm_Database.PNG)
 
 
 ### Home ![Home](screenshots/LocalHostRun.PNG)

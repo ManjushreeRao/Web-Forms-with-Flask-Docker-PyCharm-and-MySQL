@@ -8,7 +8,7 @@ from pymysql.cursors import DictCursor
 app = Flask(__name__)
 mysql = MySQL(cursorclass=DictCursor)
 
-app.config['MYSQL_DATABASE_HOST'] = 'db'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
 app.config['MYSQL_DATABASE_PORT'] = 3306
@@ -18,7 +18,7 @@ mysql.init_app(app)
 
 @app.route('/', methods=['GET'])
 def index():
-    user = {'username': 'Khang Tran'}
+    user = {'username': 'Mandy'}
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM oscarAgeFemale')
     result = cursor.fetchall()
